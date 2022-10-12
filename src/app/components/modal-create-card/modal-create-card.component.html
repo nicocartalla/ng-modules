@@ -1,0 +1,27 @@
+
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+                <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">Card {{modalType}}</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="form-floating title">
+                        <textarea #cardTitle class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px">{{cardInput.title}}</textarea>
+                        <label for="floatingTextarea2">Title</label>
+                    </div>
+                    <div class="form-floating description">
+                        <textarea #cardDescription class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px">{{cardInput.description}}</textarea>
+                        <label for="floatingTextarea2">Description</label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" (click)="outputCard(cardTitle.value,cardDescription.value)">{{modalType}}</button>
+            </div>
+        </div> 
+    </div>
+
+

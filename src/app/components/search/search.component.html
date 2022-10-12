@@ -1,0 +1,14 @@
+<div class="search">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="search-container">
+                    <div class="input-group">
+                        <input type="text" #picInput class="form-control" placeholder="Search" aria-label="Search" (keypress)="searchPics(picInput.value)" (keyup)="searchPics(picInput.value)" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="searchPics(picInput.value)">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

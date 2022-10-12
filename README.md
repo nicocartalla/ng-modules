@@ -10,18 +10,47 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## NOTITASSS
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## In memory database
 
-## Running unit tests
+## Create Interface for cars in models
+`ng generate interface models/cards`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Create Class for cards in models
+`ng g class models/cards -—type=model`
 
-## Running end-to-end tests
+## Create InMemory Database
+----------------------------------------------------------------------------------------------------------------------
+`npm install --save angular-in-memory-web-api`
+`ng generate service data`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+and import
+```javascript
+import { Injectable } from '@angular/core';
+import {InMemoryDbService, RequestInfo} from 'angular-in-memory-web-api'
 
-## Further help
+@Injectable({
+  providedIn: 'root'
+})
+export class DataService implements InMemoryDbService{
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  constructor() { }
+  createDb() {
+
+}
+
+```
+
+And add the next statements in app.module.ts
+
+import { InMemoryWebApiModule } from "angular-in-memory-web-api";  
+import { DataService } from "./services/data.service";
+import { HttpClientModule } from '@angular/common/http';
+
+and in import section
+
+InMemoryWebApiModule.forRoot(DataService),
+HttpClientModule,
+
+----------------------------------------------------------------------------------------------------------------------

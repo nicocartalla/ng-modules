@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    justify-content: space-between;  /* Alinea los elementos de la fila con un espacio entre ellos */
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-container {
+
+    margin-bottom: 56px;
+}

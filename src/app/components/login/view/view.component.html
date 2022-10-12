@@ -1,0 +1,17 @@
+<html>
+    <div class="glass-container">
+        <div class="greeting-container item">
+            <div class="hello">Hello again!</div>
+            <div class="question">Ready to save some money?</div>
+        </div>
+        <div class="item">
+            <div class="login-box">
+                <app-input class="sign-in-input" (onUsernameInput)=onUsernameInput($event) (onPasswordInput)="onPasswordInput($event)"></app-input>
+                <div class="sign-in-button">
+                    <app-sign-in [username]="username" [password]="password"></app-sign-in>
+                </div>
+            </div>
+        </div>  
+    </div>
+    
+</html>

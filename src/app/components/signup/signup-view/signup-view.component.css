@@ -1,0 +1,74 @@
+html {
+    background-image: linear-gradient(
+  130deg,
+  hsl(217deg 79% 65%) 0%,
+  hsl(231deg 80% 71%) 20%,
+  hsl(284deg 38% 65%) 40%,
+  hsl(338deg 49% 69%) 60%,
+  hsl(11deg 82% 74%) 80%,
+  hsl(34deg 99% 73%) 100%
+);
+
+    font-family: Karla, sans-serif;
+    color: white;
+  }
+
+.glass-container{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, .45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .25);
+    backdrop-filter: blur(15px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.greeting-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.hello{
+    padding-bottom: 30px;
+    font-weight: 800;
+    font-size: 62px;
+    
+}
+
+.question{
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+.login-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sign-in-button {
+    width: 328px;
+    height: 59px;
+    left: 31px;
+    margin-left: 26pt;
+    margin-top: 68pt;
+}
+
+.login-box {
+    display: flex;
+    /* margin-top: 282pt;
+    margin-right: 26pt;
+    align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}

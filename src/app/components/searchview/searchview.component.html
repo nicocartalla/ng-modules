@@ -1,0 +1,6 @@
+<app-search (picsOutput)="renderPics($event)"></app-search><div class="row">
+    <div class="row">
+        <div class="col" *ngFor="let pic of pics" >
+            <app-pic [pic]="pic"></app-pic>
+        </div>
+    </div>

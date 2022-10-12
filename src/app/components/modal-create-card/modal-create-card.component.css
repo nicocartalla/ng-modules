@@ -1,0 +1,10 @@
+.form-control {
+    margin-bottom: 10pt;
+    border-radius: 10pt;
+}
+
+.title .form-control{
+    font-size: 15pt;
+    max-height: 50pt;
+    font-weight: bold;
+}

@@ -1,0 +1,17 @@
+
+<div>
+    <input class="input-signup" placeholder="Name" type="text" id="name" name="name" (focusout)="inputName(name.value)" #name >
+</div>
+<div>
+    <input class="input-signup" placeholder="Last Name" type="text" id="lastname" name="lastnam" (focusout)="inputLastName(lastName.value)" #lastName >
+</div>
+<div>
+    <input class="input-signup" placeholder="E-mail or username" type="text" id="username" name="username" (focusout)="inputUserName(username.value)" #username >
+</div>
+
+<div class="password">
+    <input class="input-signup custom-password" type="password" placeholder="Password" name="pwd" (focusout)="inputPassword(pwd.value)" #pwd >
+</div>  
+<div class="password">
+    <input class="input-signup custom-password" type="password" placeholder="Password Confirm" name="pwdRep" (focusout)="inputPasswordRep(pwdRep.value)" #pwdRep >
+</div>  
